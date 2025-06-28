@@ -7,7 +7,9 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <script src="scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 <body>
     <!-- Navbar with Paper Heart -->
@@ -29,74 +31,180 @@
                 <a href="team.html" class="nav-link text-primary-dark hover:text-white font-medium">Meet the Team</a>
                 <a href="donate.html" class="nav-link text-primary-dark hover:text-white font-medium">Donate</a>
             </div>
+
         </div>
     </nav>
 
-    <!-- About Section -->
+    <!-- Home Hero Section -->
     <section class="hero-section relative pt-32 pb-20 md:pt-40 md:pb-28 px-6 md:px-12">
         <div class="max-w-7xl mx-auto">
             <div class="md:w-2/3">
-                <div class="mb-8">
-                    <i class="fas fa-heart paper-heart text-6xl"></i>
+                <h1 class="text-4xl md:text-6xl font-bold text-primary-dark mb-6">Handmade <span class="text-white">With Love</span></h1>
+                <p class="text-xl text-primary-dark mb-10">Creating beautiful paper hearts to spread joy and kindness worldwide.</p>
+                <div class="flex space-x-4">
+                    <a href="about.html" class="px-8 py-3 font-medium text-primary-dark bg-white hover:bg-primary-lighter hover:text-white rounded-md shadow-lg transition duration-300">
+                        Our Story
+                    </a>
+                    <a href="donate.html" class="px-8 py-3 font-medium text-white bg-primary-dark hover:bg-primary rounded-md shadow-lg transition duration-300">
+                        Support Us
+                    </a>
                 </div>
-                <h1 class="text-4xl md:text-6xl font-bold text-primary-dark mb-6">About <span class="text-white">Our Mission</span></h1>
-                <p class="text-xl text-primary-dark mb-10">Founded in 2025, PaperHearts is led by a team of passionate gooners attempting to spread love to the world.</p>
             </div>
         </div>
     </section>
 
-    <section class="py-20 px-6 md:px-12 bg-white">
-        <div class="max-w-4xl mx-auto">
-            <h2 class="text-3xl font-bold text-primary-dark mb-8">Our Story</h2>
-            <div class="prose text-primary-dark">
-                <p>we began as a company that does shit for who knows </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Features Section -->
+    <!-- Featured Products -->
     <section class="py-20 px-6 md:px-12 bg-white">
         <div class="max-w-7xl mx-auto">
-            <h2 class="text-3xl md:text-4xl font-bold text-center text-primary-dark mb-12">Why Choose Us</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-primary-lighter p-8 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
-                    <div class="w-16 h-16 bg-primary-dark rounded-full flex items-center justify-center mb-6 mx-auto">
-                        <i class="fas fa-heart text-2xl text-white"></i>
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-primary-dark mb-12">Our Creations</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Product 1 -->
+                <div class="bg-primary-lighter rounded-lg shadow-lg overflow-hidden transition duration-300 hover:shadow-xl">
+                    <div class="h-48 bg-primary flex items-center justify-center">
+                        <i class="fas fa-heart text-6xl text-white"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-primary-dark mb-4 text-center">Pure Kindness</h3>
-                    <p class="text-primary-dark text-center">We believe in authentic, no-strings-attached kindness that comes straight from the heart.</p>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-primary-dark mb-2">Classic Heart</h3>
+                        <p class="text-primary-dark text-sm">Handcrafted with recycled paper, perfect for any occasion.</p>
+                    </div>
                 </div>
-                <div class="bg-primary-lighter p-8 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
-                    <div class="w-16 h-16 bg-primary-dark rounded-full flex items-center justify-center mb-6 mx-auto">
-                        <i class="fas fa-hands-helping text-2xl text-white"></i>
+                
+                <!-- Product 2 -->
+                <div class="bg-primary-lighter rounded-lg shadow-lg overflow-hidden transition duration-300 hover:shadow-xl">
+                    <div class="h-48 bg-primary flex items-center justify-center">
+                        <i class="fas fa-heart text-6xl text-white"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-primary-dark mb-4 text-center">Real Connections</h3>
-                    <p class="text-primary-dark text-center">Build meaningful relationships with people who genuinely care.</p>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-primary-dark mb-2">Personalized Heart</h3>
+                        <p class="text-primary-dark text-sm">Custom messages and designs for your special someone.</p>
+                    </div>
                 </div>
-                <div class="bg-primary-lighter p-8 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
-                    <div class="w-16 h-16 bg-primary-dark rounded-full flex items-center justify-center mb-6 mx-auto">
-                        <i class="fas fa-smile text-2xl text-white"></i>
+                
+                <!-- Product 3 -->
+                <div class="bg-primary-lighter rounded-lg shadow-lg overflow-hidden transition duration-300 hover:shadow-xl">
+                    <div class="h-48 bg-primary flex items-center justify-center">
+                        <i class="fas fa-heart text-6xl text-white"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-primary-dark mb-4 text-center">Daily Joy</h3>
-                    <p class="text-primary-dark text-center">Experience the happiness that comes from giving and receiving love.</p>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-primary-dark mb-2">Gift Set</h3>
+                        <p class="text-primary-dark text-sm">Collection of hearts perfect for gifting.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Call to Action -->
+    <!-- Sponsors Section -->
+    <section class="py-12 bg-white">
+        <h2 class="text-3xl font-bold text-center text-primary-dark mb-12">Our Proud Sponsors</h2>
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="marquee">
+                <div class="marquee-content">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/e9da88e6-d065-4546-bfbb-6ccb33560e8e.png" alt="Sponsor logo" class="mx-8 h-16 inline-block">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/20ebef5a-3b7d-4c41-8819-06c28428a918.png" alt="Sponsor logo" class="mx-8 h-16 inline-block">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/900719ed-3942-40b5-8663-e282b7888a9a.png" alt="Sponsor logo" class="mx-8 h-16 inline-block">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/52f78bf2-c60d-4866-81f0-74c1e39df34a.png" alt="Sponsor logo" class="mx-8 h-16 inline-block">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/58916bf7-372c-4b61-a991-321358e733f4.png" alt="Sponsor logo" class="mx-8 h-16 inline-block">
+                    
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/e9da88e6-d065-4546-bfbb-6ccb33560e8e.png" alt="Sponsor logo" class="mx-8 h-16 inline-block">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/20ebef5a-3b7d-4c41-8819-06c28428a918.png" alt="Sponsor logo" class="mx-8 h-16 inline-block">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/900719ed-3942-40b5-8663-e282b7888a9a.png" alt="Sponsor logo" class="mx-8 h-16 inline-block">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/52f78bf2-c60d-4866-81f0-74c1e39df34a.png" alt="Sponsor logo" class="mx-8 h-16 inline-block">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/58916bf7-372c-4b61-a991-321358e733f4.png" alt="Sponsor logo" class="mx-8 h-16 inline-block">
+
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/e9da88e6-d065-4546-bfbb-6ccb33560e8e.png" alt="Sponsor logo" class="mx-8 h-16 inline-block">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/20ebef5a-3b7d-4c41-8819-06c28428a918.png" alt="Sponsor logo" class="mx-8 h-16 inline-block">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/900719ed-3942-40b5-8663-e282b7888a9a.png" alt="Sponsor logo" class="mx-8 h-16 inline-block">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/52f78bf2-c60d-4866-81f0-74c1e39df34a.png" alt="Sponsor logo" class="mx-8 h-16 inline-block">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/58916bf7-372c-4b61-a991-321358e733f4.png" alt="Sponsor logo" class="mx-8 h-16 inline-block">
+
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/e9da88e6-d065-4546-bfbb-6ccb33560e8e.png" alt="Sponsor logo" class="mx-8 h-16 inline-block">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/20ebef5a-3b7d-4c41-8819-06c28428a918.png" alt="Sponsor logo" class="mx-8 h-16 inline-block">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/900719ed-3942-40b5-8663-e282b7888a9a.png" alt="Sponsor logo" class="mx-8 h-16 inline-block">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/52f78bf2-c60d-4866-81f0-74c1e39df34a.png" alt="Sponsor logo" class="mx-8 h-16 inline-block">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/58916bf7-372c-4b61-a991-321358e733f4.png" alt="Sponsor logo" class="mx-8 h-16 inline-block">
+
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/e9da88e6-d065-4546-bfbb-6ccb33560e8e.png" alt="Sponsor logo" class="mx-8 h-16 inline-block">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/20ebef5a-3b7d-4c41-8819-06c28428a918.png" alt="Sponsor logo" class="mx-8 h-16 inline-block">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/900719ed-3942-40b5-8663-e282b7888a9a.png" alt="Sponsor logo" class="mx-8 h-16 inline-block">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/52f78bf2-c60d-4866-81f0-74c1e39df34a.png" alt="Sponsor logo" class="mx-8 h-16 inline-block">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/58916bf7-372c-4b61-a991-321358e733f4.png" alt="Sponsor logo" class="mx-8 h-16 inline-block">
+                    
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/e9da88e6-d065-4546-bfbb-6ccb33560e8e.png" alt="Sponsor logo" class="mx-8 h-16 inline-block">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/20ebef5a-3b7d-4c41-8819-06c28428a918.png" alt="Sponsor logo" class="mx-8 h-16 inline-block">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/900719ed-3942-40b5-8663-e282b7888a9a.png" alt="Sponsor logo" class="mx-8 h-16 inline-block">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/52f78bf2-c60d-4866-81f0-74c1e39df34a.png" alt="Sponsor logo" class="mx-8 h-16 inline-block">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/58916bf7-372c-4b61-a991-321358e733f4.png" alt="Sponsor logo" class="mx-8 h-16 inline-block">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Home CTA -->
     <section class="py-16 px-6 md:px-12 bg-primary-dark">
         <div class="max-w-7xl mx-auto text-center">
             <i class="fas fa-heart paper-heart text-5xl mb-6 mx-auto"></i>
-            <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">Make A Difference Today</h2>
-            <p class="text-xl text-primary-lighter mb-10">Your donation helps us continue spreading love and kindness worldwide.</p>
-            <button class="px-10 py-4 font-bold text-primary-dark bg-white hover:bg-primary-lighter rounded-full shadow-xl transition duration-300 text-lg" onclick="window.location.href='donate.html'">
-                <i class="fas fa-heart mr-3"></i>Donate Now
-            </button>
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">Ready to Spread Some Love?</h2>
+            <p class="text-xl text-primary-lighter mb-10">Join our community of heart-makers and spreaders of joy.</p>
+            <div class="flex justify-center space-x-4">
+                <a href="donate.html" class="px-10 py-4 font-bold text-primary-dark bg-white hover:bg-primary-lighter rounded-full shadow-xl transition duration-300 text-lg">
+                    <i class="fas fa-heart mr-3"></i>Support Us
+                </a>
+                <a href="about.html" class="px-10 py-4 font-bold text-white border-2 border-white hover:bg-white hover:text-primary-dark rounded-full shadow-xl transition duration-300 text-lg">
+                    Learn More
+                </a>
+            </div>
         </div>
     </section>
 
-    <script src="index.js"></script>
+    <script>
+        // Mobile menu toggle
+        document.querySelector('.hamburger').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
 
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 50) {
+                document.querySelector('.navbar').classList.add('scrolled');
+            } else {
+                document.querySelector('.navbar').classList.remove('scrolled');
+            }
+        });
+        
+        // Heart beat animation
+        const hearts = document.querySelectorAll('.fa-heart');
+        hearts.forEach(heart => {
+            heart.addEventListener('mouseenter', function() {
+                this.style.animation = 'beat 0.6s';
+            });
+            heart.addEventListener('mouseleave', function() {
+                this.style.animation = '';
+            });
+        });
+    </script>
+
+    <style>
+        @keyframes marquee {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-100%); }
+        }
+        .marquee {
+            width: 100%;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+        .marquee-content {
+            display: inline-block;
+            white-space: nowrap;
+            padding-right: 100%;
+            animation: marquee 20s linear infinite;
+        }
+        .marquee:hover .marquee-content {
+            animation-play-state: paused;
+        }
+    </style>
+    
+    <!-- Animation CSS moved to external file -->
 </body>
 </html>
